@@ -18,10 +18,6 @@ class Scraper
     binding.pry
   end
 
-  doc.css(".post").first.css("h2").text
-  doc.css(".post").first.css(".date").text
-  doc.css(".post").first.css("p").text
-
   def print_courses
     self.make_courses
     Course.all.each do |course|
