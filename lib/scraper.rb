@@ -12,6 +12,8 @@ class Scraper
     binding.pry
   end
 
+  doc.css(".post").first.css("h2").text
+
   def print_courses
     self.make_courses
     Course.all.each do |course|
